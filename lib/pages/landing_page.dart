@@ -51,10 +51,10 @@ class LandingPage extends StatelessWidget {
                       shape: CircleBorder(),
                       child: Image.asset(AppAssets.rightarrow),
                       onPressed: () {
-                        Navigator.push(
+                        Navigator.pushAndRemoveUntil(
                             context,
-                            MaterialPageRoute(
-                                builder: (context) => HomePage()));
+                            MaterialPageRoute(builder: (_) => HomePage()),
+                            (route) => false);
                       },
                     )))
           ],
