@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:untitled/values/app_assets.dart';
 import 'package:untitled/values/app_colors.dart';
 import 'package:untitled/values/app_styles.dart';
@@ -11,7 +12,7 @@ class LandingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // SystemChrome.setEnabledSystemUIOverlays([]);
+    SystemChrome.setEnabledSystemUIOverlays([]);
     return Scaffold(
       backgroundColor: AppColors.primaryColor,
       body: Padding(
